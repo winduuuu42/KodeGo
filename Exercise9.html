@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>HTML Forms</h2>
+
+    <form action="/action_page.php">
+      <table border="0" cellspasing="10" cellpadding="5">
+        <tbody>
+          <tr>
+            <td><label for="name">Full Name</label></td>
+            <td><input type="text" id="name" name="name" maxlength="40" /></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+              <input type="password" id="password" name="password" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email Address</label></td>
+            <td>
+              <input type="email" id="email" name="email" maxlength="40" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="status">Status</label></td>
+            <!--radio tu be updated-->
+            <td>
+              Single<input
+                type="radio"
+                id="status"
+                name="status"
+              />Married<input
+                type="radio"
+                id="status"
+                name="status"
+              />Widow<input type="radio" id="status" name="status" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date of Birth</label></td>
+            <td><input type="date" id="dob" name="dob" /></td>
+          </tr>
+          <tr>
+            <td><label for="age">Age</label></td>
+            <td><input type="number" id="age" name="age" maxlength="3" /></td>
+          </tr>
+          <tr>
+            <td><label for="govben">Government Benefits</label></td>
+            <td>
+              <input type="checkbox" id="govben" name="SSS" />SSS
+              <br />
+              <input type="checkbox" id="govben" name="HDMF" />HDMF
+              <br />
+              <input type="checkbox" id="govben" name="Philhealth" />Philhealth
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="sched">Preffered Schedule</label></td>
+            <td><input type="time" id="sched" name="sched" /></td>
+          </tr>
+          <tr>
+            <td><label for="payout">Payout Options</label></td>
+            <td>
+              <select id="payout" name="payout">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="isp">Internet Provider</label></td>
+            <td><input type="text" id="isp" name="isp" maxlength="40" /></td>
+          </tr>
+          <tr>
+            <td><label for="ID">Upload ID Photo</label></td>
+            <td>
+              <input
+                type="file"
+                id="ID"
+                name="ID"
+                accept="image/png, image/jpeg"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label for="info">Additional Info </label
+              ><textarea name="info" id="" cols="30" rows="5"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" align="right">
+              <input type="submit" value="Submit" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
