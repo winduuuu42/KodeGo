@@ -1,0 +1,60 @@
+body{
+    margin: 0% ;
+    
+}
+
+h1{ 
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Jost', sans-serif;
+    margin: 0%;
+    text-align: left;
+    background-color: #281d1d ;
+    padding: 20px;
+    padding-left: 60px;
+    color: whitesmoke;
+    padding-top: 40px;
+    padding-bottom:5px;
+    box-shadow: 0 4px 2px -2px gray;
+
+}
+.responsive{
+    width: 100%;
+    height: auto;
+}
+
+article{ 
+    padding: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+h2{
+    font-family: 'Jost', sans-serif;
+    font-size: 37px;
+    font-weight: 500;
+    margin: 0%;
+    
+}
+
+h3{
+    font-size: 30px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    color: darkorange;
+    padding-left: 20px;
+
+}
+h3 ~ p {
+    padding-left: 50px;
+}
+
+
+#lonelyP{
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 20px;
+}
+
+
