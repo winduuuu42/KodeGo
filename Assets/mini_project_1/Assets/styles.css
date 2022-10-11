@@ -41,9 +41,15 @@
   text-decoration: none ;
   color: aliceblue;
 }
+
+.b{
+  color: aliceblue;
+}
+
 .w{
   color: #F0E68C;
 }
+
 .nav-item {
   font-family: 'Chivo', sans-serif;
   font-weight: 100;
@@ -72,11 +78,11 @@ nav{
 .caption{
   color: aliceblue;
   font-family: 'Chivo', sans-serif;
-  font-size: 1.5em;
+  font-size: 2vw;
   font-weight: 100;
   padding-top: 5px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 1vw;
+  padding-right: 1vw;
   margin: 10px 0 20px;
   letter-spacing: 0.1em;
   word-spacing: 0.5em;
