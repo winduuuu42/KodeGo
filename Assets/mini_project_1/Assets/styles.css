@@ -1,5 +1,101 @@
-body::before{
+
+@media (min-width: 992px) {
+    #intro {
+      margin-top: -58.59px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .navbar-brand { display: inline-block; }
+    .navbar-brand-short { display: none; }
+}
+@media (max-width: 992px) {
+  .navbar-brand-short { display: inline-block; }
+  .navbar-brand { display: none; }
+}
+#intro {
+    background-image: url("./img/wallpaper.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+/* body::before{
     display: block;
     content: '';
     height: 100px;
+
+} */
+
+.navbar-brand{
+    font-family: 'Chivo', sans-serif !important;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    padding-top: 10px;
 }
+
+.navbar-brand-short{
+  font-family: 'Chivo', sans-serif !important;
+  font-size: 30px;
+  font-weight: 100;
+  text-decoration: none ;
+  color: aliceblue;
+}
+.w{
+  color: #F0E68C;
+}
+.nav-item {
+  font-family: 'Chivo', sans-serif;
+  font-weight: 100;
+  padding: 3px;
+  padding-right: 10px;
+}
+
+.nav-link:hover {
+  background-color:hsla(79, 6%, 49%, 0.3);
+}
+nav{
+  transition: 200ms ease-in-out background-color,
+              100ms ease-in-out bos-shadow;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;  
+}
+
+
+.cover{
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 100;
+  font-size: 10vw;
+  color: aliceblue;
+}
+
+.caption{
+  color: aliceblue;
+  font-family: 'Chivo', sans-serif;
+  font-size: 1.5em;
+  font-weight: 100;
+  padding-top: 5px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 10px 0 20px;
+  letter-spacing: 0.1em;
+  word-spacing: 0.5em;
+}
+.caption span{
+  border-top: 1px solid hsl(208, 100%, 97%, 0.25);
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: .5em;
+}
+.btn:hover{
+  color: aliceblue;
+}
+.bren:hover{
+  color: aliceblue;
+}
+.work {
+  color: #F0E68C  ;
+
+}
+
+
