@@ -13,12 +13,14 @@
   .navbar-brand-short { display: inline-block; }
   .navbar-brand { display: none; }
 }
+
 #intro {
     background-image: url("./img/wallpaper.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
   }
+  
 
 
 .navbar-brand{
@@ -27,6 +29,7 @@
     font-weight: 100;
     letter-spacing: 5px;
     padding-top: 10px;
+    text-shadow: 2px 2px rgba(199, 184, 184, 0.35);
 }
 
 .navbar-brand-short{
@@ -35,6 +38,7 @@
   font-weight: 100;
   text-decoration: none ;
   color: aliceblue;
+  text-shadow: 2px 2px rgba(199, 184, 184, 0.35);
 }
 
 .b{
@@ -100,30 +104,40 @@ nav{
 }
 
 .gallery{
-  padding-top: 150px;
-  padding-bottom:100px;
+  padding-top: 200px;
+  padding-bottom:125px;
+ 
   
 }
 
 .gallery-txt{
   align-self: center;
+  
+
 }
 .gallery-txt h2{
   font-family: 'Tangerine', cursive;
   font-size: 7vw ;
   text-align: center;
   letter-spacing: 5px;
+  text-shadow: 2px 2px rgba(199, 184, 184, 0.35);
+  
 
 }
 
 .gallery-txt a{
   padding:15px;
   color: aliceblue;
-  background-color: rgb(98, 123, 118, .2);
+  background-color: rgb(98, 123, 118, .4);
   text-decoration: none;
   border-radius: 5px;
   font-family: 'Advent Pro', sans-serif;
   font-size: 20px;
+  box-shadow: 5px 10px;
+}
+
+.gallery-txt a:hover{
+  background-color:hsla(79, 6%, 49%, 0.6);
 }
 
 .gallery-txt div{
@@ -132,10 +146,17 @@ nav{
 }
 
 .about-me{
-  padding-top: 150px;
-  padding-bottom:100px;
+  margin-top: 160px;
+  margin-bottom: 100px;
   justify-content: center;
   align-items: center;
+  background-color: rgba(235, 253, 253, 0.1);
+  border-radius: 10px;
+}
+.about-bg{
+  background-image: url(./img/car.JPG);
+  background-size: cover;
+  padding-bottom: 100px;
 }
 .about-me-left{
   padding-right: 100px;
@@ -147,14 +168,47 @@ nav{
 .bren-photo{
   width: 200px;
   border-radius: 100px;
+  opacity: 0.9;
 }
 
+.bren-photo:hover{
+  opacity: 1;
+}
+
+
+.about-me-right{
+  padding:20px;
+
+}
 .about-me-right h2{
   font-family: 'Advent Pro', sans-serif;
   font-size: 60px;
   text-align: center;
+  color: hsl(208, 100%, 97%, 0.95);
+
+}
+
+.about-me-right p{
+  color: hsl(208, 100%, 97%, 0.95);
 }
 
 .follow{
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Chivo', sans-serif;
+  letter-spacing: 3px;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.btn-floating{
+  opacity: 0.8;
+  border-radius: 25px;
+
+}
+
+.btn-floating:hover{
+  opacity: 1;
+}
+
+footer{
+  opacity: 0.96;
 }
