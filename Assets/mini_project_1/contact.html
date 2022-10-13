@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="bg-light">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brenworks</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Assets/about_styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <body
+    class="bg-light"
+    data-spy="scroll"
+    data-target=".navbar"
+    data-offset="50"
+  >
+
+
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <div class="container">
+        <a href="./index.html" class="navbar-brand">BRENWORKS</a>
+        <a href="./index.html" class="navbar-brand-short"
+          ><span class="b">B</span><span class="w">W</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="nav navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="./index.html#gallery" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="./index.html#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- photo -->
+    <div class="container photo d-flex">
+        <img src="./Assets/img/kalesa.JPG" alt="kalesa" class="pre_img" >
+    </div>
+
+<!-- 
+    form -->
+    <div id="contact"class="container">
+        <div class="container text-center content">
+           <h1>Contact</h1>
+        </div>
+    </div>
+    <div class="container form">
+        <form>
+            <div>
+                <strong><p>Purpose of Email*</p></strong>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="purpose" id="inquiries" idvalue="option1" checked required>
+                <label for="inquiries" class="form-check-label">Inquiries</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="purpose" id="customer_service" idvalue="option2" required>
+                <label for="customer_service" class="form-check-label">Customer Service</label>
+            </div>
+            
+                <div class="row name">
+                    <div class="col">
+                    Name*<input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col">
+                      <br><input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address*</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            </div>
+
+            <div class="form-group">
+                Subject*<input type="text" class="form-control" placeholder="" required>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message*</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div>
+            <div class="submit">
+            <button type="submit" class="btn btn-dark">Submit</button>
+            </div>
+        </form> 
+    </div>
+
+   
+   <!-- Foooter -->
+   <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+        <h2 class="follow">Follow Me</h2>
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998"
+            href="https://facebook.com/bren.tolentino"
+            target="_blank"
+            role="button"
+            >
+            <i class="bi bi-facebook"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee"
+            href="https://twitter.com/brenworks"
+            target="_blank"
+            role="button"
+            ><i class="bi bi-twitter"></i></i
+            ></a>
+
+            <!-- Instagram -->
+            <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="https://www.instagram.com/b.renworks/"
+            target="_blank"
+            role="button"
+            ><i class="bi bi-instagram"></i
+            ></a>
+
+        </section>
+        <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a
+            class="text-white"
+            href="https://winduuuu42.github.io/KodeGo/Assets/mini_project_1/index.html"
+            >brenworks.com</a
+        >
+        </div>
+    </footer>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
+
+ 
+
+  <!-- vanish nav script -->
+  <!-- <script>
+    const nav = document.querySelector("nav");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 200) {
+        nav.classList.add("bg-dark");
+      } else {
+        nav.classList.remove("bg-dark");
+      }
+    });
+  </script> -->
+</body>
+</html>
