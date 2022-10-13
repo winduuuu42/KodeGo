@@ -145,6 +145,8 @@ nav{
   padding-top: 20px;
 }
 
+
+/* about */
 .about-me{
   margin-top: 160px;
   margin-bottom: 100px;
@@ -154,14 +156,28 @@ nav{
   border-radius: 10px;
 }
 .about-bg{
+  padding-bottom: 100px;
+  padding-top: 30px;
+  position: relative;
+  isolation: isolate;
+  background-color: black;
+}
+
+.about-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
   background-image: url(./img/car.JPG);
   background-size: cover;
-  padding-bottom: 100px;
+  z-index: -1;
+  opacity: 0.3;
 }
+
 .about-me-left{
   padding-right: 100px;
   padding-left: 100px;
   padding-bottom: 50px;
+  padding-top: 50px;
   
 }
 
@@ -178,6 +194,7 @@ nav{
 
 .about-me-right{
   padding:20px;
+  padding-top: 70px;
 
 }
 .about-me-right h2{
@@ -192,6 +209,8 @@ nav{
   color: hsl(208, 100%, 97%, 0.95);
 }
 
+
+/* footer */
 .follow{
   font-family: 'Chivo', sans-serif;
   letter-spacing: 3px;
@@ -209,6 +228,3 @@ nav{
   opacity: 1;
 }
 
-footer{
-  opacity: 0.96;
-}
