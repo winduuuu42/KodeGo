@@ -14,15 +14,6 @@
   .navbar-brand { display: none; }
 }
 
-#intro {
-    background-image: url("./img/wallpaper.JPG");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-  }
-  
-
-
 .navbar-brand{
     font-family: 'Chivo', sans-serif !important;
     font-size: 20px;
@@ -66,6 +57,14 @@ nav{
   padding-bottom: 20px !important;  
 }
 
+/* 
+intro */
+#intro {
+  background-image: url("./img/wallpaper.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 
 .cover{
   font-family: 'Advent Pro', sans-serif;
@@ -227,4 +226,3 @@ nav{
 .btn-floating:hover{
   opacity: 1;
 }
-
