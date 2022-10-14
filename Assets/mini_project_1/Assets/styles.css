@@ -127,7 +127,7 @@ intro */
 .gallery-txt a{
   padding:15px;
   color: aliceblue;
-  background-color: rgb(98, 123, 118, .4);
+  background-color: rgba(70, 169, 61, 0.6);
   text-decoration: none;
   border-radius: 5px;
   font-family: 'Advent Pro', sans-serif;
@@ -136,13 +136,14 @@ intro */
 }
 
 .gallery-txt a:hover{
-  background-color:hsla(79, 6%, 49%, 0.6);
+  background-color:hsla(79, 6%, 49%, 0.9);
 }
 
 .gallery-txt div{
   text-align: center;
   padding-top: 20px;
 }
+
 
 
 /* about */

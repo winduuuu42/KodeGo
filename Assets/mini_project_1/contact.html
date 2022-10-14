@@ -118,7 +118,19 @@
             </div>
         </form> 
     </div>
-
+    
+    <div class="btt_padding">
+      <div class="back_to_top">
+        <center><button
+        type="button"
+        class="btn btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+        <i class="bi bi-arrow-up"></i>
+        </button>
+        </center>
+      </div>
+    </div>
    
    <!-- Foooter -->
    <footer class="bg-dark text-center text-white">
@@ -161,6 +173,8 @@
         </section>
         <!-- Section: Social media -->
         </div>
+
+        
         <!-- Grid container -->
 
         <!-- Copyright -->
@@ -172,13 +186,28 @@
             >brenworks.com</a
         >
         </div>
-    </footer>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"
-  ></script>
 
+
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      let mybutton = document.getElementById("btn-back-to-top");
+
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 800;
+        document.documentElement.scrollTop = 800;
+      }
+    </script>
+  
  
 
   <!-- vanish nav script -->
