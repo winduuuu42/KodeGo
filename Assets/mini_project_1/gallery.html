@@ -27,6 +27,7 @@
         />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Tangerine&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <!--Navbar-->
@@ -63,8 +64,16 @@
           
     <!-- Main Gallery -->
         <section class="gallery">
+          <div class="container-lg d-flex category">
+            <div>
+                <a class="photo" href="./gallery.html">Photography</a>
+            </div>
+            <div>
+                <a class="gunpla" href="./gallery_2.html">Gunpla</a>
+            </div>
+        </div>
           <div class="container-lg">
-            <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="row gy-5 gx-5 row-cols-1 row-cols-sm-2 row-cols-md-3">
               <div class="col">
                 <img src="./Assets/img/img1.jpg" alt="gallery" class="gallery-item">
               </div>
@@ -93,7 +102,7 @@
                 <img src="./Assets/img/img9.jpg" alt="gallery" class="gallery-item">
               </div>
               <div class="col">
-                <img src="./Assets/img/img3.jpg" alt="gallery" class="gallery-item">
+                <img src="./Assets/img/DSCF7424.jpg" alt="gallery" class="gallery-item">
               </div>
               <div class="col">
                 <img src="./Assets/img/img11.jpg" alt="gallery" class="gallery-item">
@@ -110,9 +119,84 @@
               <div class="col">
                 <img src="./Assets/img/img15.jpg" alt="gallery" class="gallery-item">
               </div>
+              <div class="col">
+                <img src="../mini_project_1/Assets/img/cat (1).JPG" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/cat (2).JPG" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/cat (3).JPG" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/kalesafull.JPG" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/moon.JPG" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/lanterns.JPG" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/light.jpg" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/meters.jpg" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/wallpaper.JPG" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/kid.JPG" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/DSC_0118.JPG" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/last.jpg" alt="gallery" class="gallery-item">
+              </div>
+
             </div>
           </div>
         </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="gallery-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/1.jpg" class="modal-img" alt="modal img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btt_padding">
+      <div class="back_to_top">
+        <center><button
+        type="button"
+        class="btn btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+        <i class="bi bi-arrow-up"></i>
+        </button>
+        </center>
+      </div>
+    </div>
     <!-- Foooter -->
         <footer class="bg-dark text-center text-white">
         <!-- Grid container -->
@@ -172,22 +256,24 @@
         </footer>
 
         <!-- SCRIPTS -->
+
         <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"
         ></script>
-
+        
         <script>
         let mybutton = document.getElementById("btn-back-to-top");
 
         mybutton.addEventListener("click", backToTop);
 
         function backToTop() {
-            document.body.scrollTop = 800;
-            document.documentElement.scrollTop = 800;
+            document.body.scrollTop = 1;
+            document.documentElement.scrollTop = 1;
         }
         </script>
+        <script src="./Assets/main.js"></script>
     </body>
 
 

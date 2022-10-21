@@ -131,7 +131,7 @@ intro */
   text-decoration: none;
   border-radius: 5px;
   font-family: 'Advent Pro', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   box-shadow: 5px 10px;
 }
 
@@ -149,7 +149,6 @@ intro */
 /* about */
 .about-me{
   margin-top: 160px;
-  margin-bottom: 100px;
   justify-content: center;
   align-items: center;
   background-color: rgba(235, 253, 253, 0.1);
@@ -194,7 +193,8 @@ intro */
 
 .about-me-right{
   padding:20px;
-  padding-top: 70px;
+  justify-content: center;
+  text-align: center;
 
 }
 .about-me-right h2{
@@ -207,6 +207,7 @@ intro */
 
 .about-me-right p{
   color: hsl(208, 100%, 97%, 0.95);
+  font-size: 20px;
 }
 
 

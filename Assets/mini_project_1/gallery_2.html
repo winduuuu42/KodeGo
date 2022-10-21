@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head class="bg-light">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Gallery</title>
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./Assets/gallery_2.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300&display=swap"
+        rel="stylesheet"
+        />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet"
+        />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap"
+        rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Tangerine&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <div class="container">
+              <a href="./index.html" class="navbar-brand">BRENWORKS</a>
+              <a href="./index.html" class="navbar-brand-short"
+                ><span class="b">B</span><span class="w">W</span></a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="nav navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a href="./index.html#gallery" class="nav-link">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./index.html#about" class="nav-link">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./contact.html#contact" class="nav-link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          
+    <!-- Main Gallery -->
+        
+    
+        <section class="gallery">
+            <div class="container-lg d-flex category">
+                <div>
+                    <a class="photo" href="./gallery.html">Photography</a>
+                </div>
+                <div>
+                    <a class="gunpla" href="./gallery_2.html">Gunpla</a>
+                </div>
+            </div>
+            <div class="container-lg">
+            <div class="row gy-5 gx-5 row-cols-1 row-cols-sm-2 row-cols-md-3">
+              <div class="col">
+                <img src="./Assets/img/gundam/chibi (2).jpg" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/chibi (3).jpg" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/chibi (4).jpg" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/long (2).JPG" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/long (3).JPG" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/long (4).JPG" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/long (9).jpg" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/long (6).JPG" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/long (8).JPG" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/square (1).jpg" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/square (7).jpg" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/square (3).jpg" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/square (4).jpg" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/square (5).jpg" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/square (6).jpg" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/square (9).jpg" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/square (10).jpg" alt="gallery" class="gallery-item">
+              </div>
+              <div class="col">
+                <img src="./Assets/img/gundam/square (11).jpg" alt="gallery" class="gallery-item">
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="gallery-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/1.jpg" class="modal-img" alt="modal img" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btt_padding">
+        <div class="back_to_top">
+          <center><button
+          type="button"
+          class="btn btn-floating btn-lg"
+          id="btn-back-to-top"
+          >
+          <i class="bi bi-arrow-up"></i>
+          </button>
+          </center>
+        </div>
+    </div>
+    <!-- Foooter -->
+        <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+        <h2 class="follow">Follow Me</h2>
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998"
+            href="https://facebook.com/bren.tolentino"
+            target="_blank"
+            role="button"
+            >
+            <i class="bi bi-facebook"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee"
+            href="https://twitter.com/brenworks"
+            target="_blank"
+            role="button"
+            ><i class="bi bi-twitter"></i></i
+            ></a>
+
+            <!-- Instagram -->
+            <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="https://www.instagram.com/b.renworks/"
+            target="_blank"
+            role="button"
+            ><i class="bi bi-instagram"></i
+            ></a>
+
+        </section>
+        <!-- Section: Social media -->
+        </div>
+
+        
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a
+            class="text-white"
+            href="https://winduuuu42.github.io/KodeGo/Assets/mini_project_1/index.html"
+            >brenworks.com</a
+        >
+        </div>
+
+
+        </footer>
+
+        <!-- SCRIPTS -->
+
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"
+        ></script>
+        
+        <script>
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 1;
+            document.documentElement.scrollTop = 1;
+        }
+        </script>
+        <script src="./Assets/main.js"></script>
+    </body>
+
+
+</html>

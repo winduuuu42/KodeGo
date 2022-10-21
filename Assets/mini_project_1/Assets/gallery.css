@@ -59,13 +59,48 @@ nav{
 
 
 /* main gallery */
+.category{
+  padding: 10px;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: 1.2em;
+  font-family: 'Chivo', sans-serif !important;
+  border-bottom: solid hsl(0, 0%, 0%, 0.2) 1px;
+}
+.photo{
+  padding: 1em;
+  text-decoration: none;
+  border-left: solid hsl(0, 0%, 0%, 0.2) 1px;
+  border-right: solid hsl(0, 0%, 0%, 0.2) 1px;
+  color: rgb(28, 29, 30);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.135), rgba(0, 0, 0, 0.043),rgba(0, 0, 0, 0));
+  
+}
+
+.gunpla{
+  padding: 1em;
+  text-decoration: none;
+  border-right: solid hsl(0, 0%, 0%, 0.2) 1px;
+  color: rgb(28, 29, 30);
+}
+
+.photo:hover{
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.135), rgba(0, 0, 0, 0.043),rgba(0, 0, 0, 0));
+}
+
+.gunpla:hover{
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.135), rgba(0, 0, 0, 0.043),rgba(0, 0, 0, 0));
+}
+
 img{
   max-width: 100%;
 }
 
 .gallery{
   padding: 80px 0 ;
-  padding-top: 100px;
+  padding-top: 110px;
 }
 
 .gallery img{
@@ -75,6 +110,7 @@ img{
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
   cursor: pointer;
 }
+
 
 
 
@@ -101,3 +137,5 @@ img{
     background-color: rgb(86, 82, 82);
     color: aliceblue !important;
   }
+
+  
