@@ -181,9 +181,10 @@ intro */
 }
 
 .bren-photo{
-  width: 200px;
-  border-radius: 100px;
+  width: 10em;
+  border-radius: 5em;
   opacity: 0.9;
+  justify-self: center;
 }
 
 .bren-photo:hover{
@@ -207,7 +208,7 @@ intro */
 
 .about-me-right p{
   color: hsl(208, 100%, 97%, 0.95);
-  font-size: 20px;
+  font-size: 0.9em;
 }
 
 
