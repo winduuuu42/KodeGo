@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gorcery List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/grocery.css" />
+  </head>
+  <body style="background-color: #428bad">
+    <section>
+      <div class="container py-5 h-5 00">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col col-lg-8 col-xl-6">
+            <div class="groceries card rounded-3">
+              <div class="card-body p-4">
+                <p class="mb-2">
+                  <span class="heading h2 me-2">Grocery List</span>
+                </p>
+                <div class="input-group mb-2">
+                  <input
+                    id="userInput"
+                    type="text"
+                    class="form-control"
+                    placeholder=""
+                    aria-label=""
+                  />
+                </div>
+                <button
+                  id="clear"
+                  class="btn my-0 float-end btn-outline-secondary"
+                  type="button"
+                >
+                  Clear List
+                </button>
+
+                <div class="d-flex align-items-center my-4">
+                  <div id="allItems" class="container"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const groceries = document.getElementsByClassName("groceries")[0];
+      const clear = document.getElementById("clear");
+      const allitems = document.getElementById("allItems");
+      const userInput = document.getElementById("userInput");
+
+      clear.addEventListener("click", function () {
+        allitems.innerHTML = "";
+      });
+
+      userInput.addEventListener("keydown", function (event) {
+        if (event.key == "Enter") addItem();
+      });
+
+      function addItem() {
+        var h3 = document.createElement("h3");
+        h3.innerHTML = " · " + userInput.value;
+
+        h3.addEventListener("click", function () {
+          h3.style.textDecoration = "line-through";
+        });
+
+        allitems.insertAdjacentElement("beforeend", h3);
+
+        userInput.value = "";
+      }
+    </script>
+  </body>
+</html>
