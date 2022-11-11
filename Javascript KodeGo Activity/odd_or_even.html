@@ -3,7 +3,7 @@
   <head class="bg-light">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Grocery Item</title>
+    <title>Odd or Even?</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -77,20 +77,32 @@
             <div class="col-lg-6">
                 
                 <div class="bg-light shadow-lg p-3 mb-3 rounded">
-                    <h3 class="text-center">Grocery List</h3>
-                  <ul class="text-start text-indent pt-3 pb-3 ps-5" id="groceryItems"></ul>
+                    <h3 class="text-center title">Odd or Even?</h3>
+                    <span class="text-muted">Input number:</span>
+                    <br>
+                  <input type="number" id="oddEven" onkeyup="isCheck()">
+                  <h3 class id="result"></h3>
                 </div>
             </div>
             <div class="col-lg-6">
                 <code>
                 <pre class="bg-dark bg-opacity-5 p-3 rounded">
-let groceryItems = ["red cabbage", "Goji berry", "anchovy paste", "asparagus", "coconut milk", "cooking wine", "chutney", "fennel seeds", "almond butter", "cheddar cheese", "cookies", "plantains", "cumin", "bacon grease", "vinegar", "sweet chili sauce", "ale", "parsley", "duck", "orange peels"];
-displayGroceryList = "";
 
-for(i = 0; i &lt groceryItems.length; i++) {
-  displayGroceryList += "&ltli>" + groceryItems[i] + "&lt/li>";
+function isCheck(){
+    var num = document.getElementById('oddEven').value;
+    if ((num % 2) == 0){
+        document.getElementById('result').innerHTML = num+ " is an even number."
+    }
+    else{
+        document.getElementById('result').innerHTML = num+ " is an odd number."
+    }
+    if (num == ""){
+        document.getElementById('result').innerHTML = ""
+    }
+    else if ((num % 1) !== 0){
+        document.getElementById('result').innerHTML = "&ltcode class='invalid'>" + "INVALID! Not a whole number." + "&lt/code>"
+    }
 }
-document.getElementById("grcryitms").innerHTML = displayGroceryList;
                 </pre>
                 </code>
             </div>
@@ -102,6 +114,6 @@ document.getElementById("grcryitms").innerHTML = displayGroceryList;
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <script src="grocery.js"></script>
+    <script src="odd_or_even.js"></script>
   </body>
 </html>
